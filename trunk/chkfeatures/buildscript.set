@@ -90,6 +90,8 @@
 #
 #     - check definition of C_PRTDIFF_T in ISO_C_BINDING
 #
+#     - check none(type,external)
+#
 @chk_newunit
 FEATURE
 The compiler does not support OPEN( NEWUNIT = ... )
@@ -668,3 +670,7 @@ The compiler does not support recursive elemental routines (Fortran 2018)
 @chk_writealloc
 EXTENSION
 The compiler adheres to the restriction about allocatable and pointer components
+
+@chk_implicit_enhancement
+FEATURE
+The compiler does not support IMPLICIT NONE(TYPE,EXTERNAL) (Fortran 2018)
